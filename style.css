@@ -1,0 +1,249 @@
+/*
+Theme Name:     Kallyas Child Theme
+Theme URI:      http://kallyas.net/demo/
+Description:    Child theme for the Kallyas theme
+Author:         Hogash
+Author URI:     http://themeforest.net/user/hogash
+Template:       kallyas
+Version:        1.0
+Tags: dark, light, left-sidebar, right-sidebar, fluid-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, full-width-template, theme-options, translation-ready
+Text Domain:  zn_framework
+*/
+@font-face {
+    font-family: 'masqualero_bold_italic';
+    src: url('fonts/Monotype  - Masqualero Bold Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'masqualero_bold';
+    src: url('fonts/Monotype  - Masqualero Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'masqualero_demi_bold_italic';
+    src: url('fonts/Monotype  - Masqualero DemiBold Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'masqualero_regular';
+    src: url('fonts/Monotype  - Masqualero Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'masqualero_italic';
+    src: url('fonts/Monotype  - Masqualero Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextLTPro_it';
+    src: url('fonts/AvenirNextLTPro-It.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextLTPro_regular';
+    src: url('fonts/AvenirNextLTPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextLTPro_medium';
+    src: url('fonts/AvenirNextLTPro-MediumCn.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.main-nav>ul>.logo-menu-wrapper, .main-nav>ul>.menu-item{
+	margin-left: 15px;
+}
+.main-nav > ul > .menu-item > a{
+	font-family: 'AvenirNextLTPro_regular';
+	position: relative;
+	-webkit-transition: all ease 0.3s;
+	   -moz-transition: all ease 0.3s;
+	    -ms-transition: all ease 0.3s;
+	     -o-transition: all ease 0.3s;
+	        transition: all ease 0.3s;
+}
+.main-nav ul ul.sub-menu .menu-item a{
+	min-width: 290px;
+}
+.main-nav > ul > .menu-item > a > span{
+	position: relative;
+}
+.main-nav > ul > .menu-item > a > span:after{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: -5px;
+	margin-top: 10px;
+	height: 1px;
+	background: #FFF;
+	width: 0;
+	-webkit-transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+	   -moz-transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+	    -ms-transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+	     -o-transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+	        transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+}
+.site-header .main-nav.mainnav--active-text > ul > .menu-item.active > a > span:after,
+.site-header .main-nav.mainnav--active-text > ul > .menu-item > a:hover > span:after,
+.site-header .main-nav.mainnav--active-text > ul > .menu-item:hover > a > span:after{
+	width: calc(100% + 10px);
+	width: -webkit-calc(100% + 10px);
+	width: -moz-calc(100% + 10px);
+}
+.mainnav--pointer-dash.main-nav>ul>.menu-item.menu-item-has-children>a:after{
+	content: url(images/arrow.png);
+	position: absolute;
+	top: 5px;
+    right: 0;
+    height: 4px;
+    width: 4px;
+    background: none;
+    left: auto;
+    bottom: auto;
+}
+#rev_slider_1_1 .uranus.tparrows:before{
+	font-weight: 400;
+}
+@media (min-width: 768px){
+	.site-header.style12 .header-no-top.header-no-bottom .site-header-main {
+	    height: 95px !important;
+	}	
+}
+.custom-contact-form form.wpcf7-form label br{
+	display: none;
+}
+.custom-contact-form form.wpcf7-form label{
+	width: 100%;
+	max-width: 536px;
+	margin: 0 auto;
+	text-align: left;
+}
+.custom-contact-form form.wpcf7-form p{
+	margin-bottom: 15px;
+	text-align: center;
+}
+.custom-contact-form form.wpcf7-form label input[type="text"],
+.custom-contact-form form.wpcf7-form label input[type="email"]{
+	height: 50px;
+	line-height: 50px;
+	padding: 0 12px;
+	background: rgba(255,255,255,0.05);
+    font-family: 'AvenirNextLTPro_regular';
+    font-weight: normal;
+	color: #FFF;
+	font-size: 14px;
+	border: 1px solid #FFF;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+}
+.custom-contact-form form.wpcf7-form label textarea{
+	padding: 15px 12px !important;
+	background: rgba(255,255,255,0.05);
+	font-size: 14px;
+    font-family: 'AvenirNextLTPro_regular';
+    font-weight: normal;
+	color: #FFF;
+	border: 1px solid #FFF !important;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+}
+.custom-contact-form form.wpcf7-form label input[type="file"]{
+	font-size: 14px;
+	padding: 0;
+	border: none;
+	font-size: 14px;
+    font-family: 'AvenirNextLTPro_regular';
+    font-weight: normal;
+}
+.custom-contact-form form.wpcf7-form input[type="submit"]{
+	width: auto;
+	padding: 14px 46px;
+	background: transparent;
+    font-family: 'AvenirNextLTPro_regular';
+    font-size: 16px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.25);
+    border: solid 1px rgba(255, 255, 255, 0.25);
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+    -webkit-transition: all ease 0.35s;
+       -moz-transition: all ease 0.35s;
+        -ms-transition: all ease 0.35s;
+         -o-transition: all ease 0.35s;
+            transition: all ease 0.35s;
+}
+.custom-contact-form form.wpcf7-form input[type="submit"]:hover{
+	background: rgba(255, 255, 255, 0.19);
+	border-color: #FFF;
+	color: #FFF;
+}
+.custom-contact-form form.wpcf7-form label input.wpcf7-not-valid{
+	border-color: #ff002e;
+}
+.custom-contact-form form.wpcf7-form label span span{
+	font-size: 10px;
+	color: #ff002e;
+	font-style: italic;
+}
+.book-description-left{
+	position: absolute;
+    bottom: 20%;
+    left: 0;
+    padding: 0 70px;
+    font-family: 'masqualero_italic';
+}
+.book-details-rght .tbk__title{
+	font-size: 24px;
+    font-family: 'masqualero_bold';
+    margin-bottom: 10px;
+    letter-spacing: normal;
+}
+.book-details-rght .tbk__subtitle{
+	font-size: 18px;
+    font-family: 'masqualero_demi_bold_italic';
+    padding-bottom: 20px;
+    margin-bottom: 35px;
+    border-bottom: solid 1px #FFF;
+}
+.book-details-rght .tbk__text p{
+	margin-bottom: 10px;
+	text-align: justify;
+	font-size: 14px;
+    font-family: 'AvenirNextLTPro_regular';
+    line-height: 18px;
+    color: #DFDFDF;
+    font-weight: 400;
+}
+.book-details-rght .tbk__text p span{
+    font-family: 'AvenirNextLTPro_it';	
+}
+.books-dtls-btn{
+    font-family: 'AvenirNextLTPro_regular';
+	font-weight: 400;
+	height: 50px;
+	line-height: 48px;
+	padding: 0 30px;
+	border-width: 1px;
+	-webkit-transition: all ease 0.35s;
+	   -moz-transition: all ease 0.35s;
+	    -ms-transition: all ease 0.35s;
+	     -o-transition: all ease 0.35s;
+	        transition: all ease 0.35s;
+}
+.books-dtls-btn:hover{
+	background: rgba(255, 255, 255, 0.19);
+}
+.book-details-rght .zn-buttonWrapper{
+	display: inline-block;
+	margin-right: 20px;
+}
